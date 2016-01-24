@@ -1,7 +1,9 @@
-Animated Background Headers
+Cabezeras animadas
 =========
 
-A collection of animated background header effects for your inspiration. We use Canvas and Javascript to create an animated background for large site headers.
+Mi diseño de pagina web para la segunda semana de frontend, hackspace 2016
+
+links:
 
 [Article on Codrops](http://tympanus.net/codrops/?p=20153)
 
