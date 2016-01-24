@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+  $("h1").dblclick(function(){
+    var h1=$("h1");
+    h1.animate({"font-size":"80px"},5000);
+  });
+  $("#test1").click(function(){
+    $("#test1").text("o cualquier otro link :D");
+  });
+  $("button").click(function(){
+    var test2=$("#test2");
+    test2.animate({width:'300px',opacity:'0.4'},"slow");
+    test2.animate({width:'100px',opacity:'1'},"slow");
+    test2.animate({height:'300px',opacity:'0.4'},"slow");
+    test2.animate({height:'100px',opacity:'1'},"slow");
+    test2.animate({height:'500px',opacity:'0.4'},"3000");
+    test2.animate({width:'500px',opacity:'0.4'},"3000");
+    test2.animate({height:'100px',opacity:'1'},"3000");
+    test2.animate({width:'100px',opacity:'1'},"3000");
+  });
+  $("#test3").mouseenter(function(){
+    $("#test3").hide();
+  });
+
+	$("#test4").click(function(){
+	    alert("Lo siento, no hay link aca :( deberia ir " + $("#test4").text());
+	  });
+});
+		</script>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Pagina de prueba</title>
+		<meta name="description" content="Examples for creative website header animations using Canvas and JavaScript" />
+		<meta name="keywords" content="header, canvas, animated, creative, inspiration, javascript" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container demo-1">
+			<div class="content">
+				<div id="large-header" class="large-header">
+					<canvas id="demo-canvas"></canvas>
+					<h1 class="main-title">Mi sitio web <span class="thin">Luiszac</span></h1>
+				</div>
+				<div class="codrops-top clearfix">
+					<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/OffCanvasMenuEffects/"><span>Otros efectos</span></a>
+					<a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=20153"><span>Ver Codrops</span></a>
+				</div>
+				<div class="codrops-header">
+					<h1>Bienvenidos<span>Hola! me llamo Luis y esta es mi pagina</span></h1>
+						<span id="test1">Aca deberian ir los links demos de otros codrops... </span>
+
+					<nav class="codrops-demos">
+
+						<a href="index.html">Demo 1</a>
+						<a id="test4" href="#">Demo 2</a>
+					</nav>
+					<br>
+					<h1>Una animacion</h1>
+					<div id="test2" style="background:#FF8000;height:100px;width:100px;position:relative;align:center;"></div>
+					<button>Animame :)</button>
+			</div>
+			<!-- Related demos -->
+			<section class="related">
+				<p>Algunos juegos:</p>
+				<a href="http://www.mortalkombat.com/">
+					<img height="162" width="300"src="http://vignette2.wikia.nocookie.net/mortalkombat/images/8/8a/Scorpion-from-Mortal-Kombat-X-Badass-Fan-Art.jpg/revision/latest?cb=20140717200646&path-prefix=es"/>
+					<h3>Mortal Kombat X</h3>
+				</a>
+				<a href="http://blog.dota2.com/">
+					<img height="162" width="300" src="http://dota2walls.com/wp-content/uploads/2014/10/i-am-juggernaut-wallpaper.jpg" />
+					<h3>Dota 2</h3>
+				</a>
+			</section>
+			<h1 align="center">El texto debajo desaparece si pasas el mouse encima</h1>
+			<p id="test3" class="ref">Imagenes: <a href="http://www.eso.org/public/images/eso1205a/">Mira imagenes para decorar aqui</a></p>
+		</div><!-- /container -->
+		<script src="js/TweenLite.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
+		<script src="js/rAF.js"></script>
+		<script src="js/demo-1.js"></script>
+	</body>
+</html>
