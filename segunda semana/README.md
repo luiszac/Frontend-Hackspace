@@ -1,4 +1,4 @@
-Cabezeras animadas
+Headers animados
 =========
 
 Mi diseño de pagina web para la segunda semana de frontend, hackspace 2016
